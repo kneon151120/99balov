@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Навигация</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- Подключение CSS библиотеки intl-tel-input -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+</head>
+<body>
+<header class="header">
+    <div class="header__nav">
+        <div class="container">
+            <div class="header__nav-box">
+                <div class="header__nav-box-logo">
+                    <img src="images/svg/logo.svg" alt="Логотип" class="header__nav-box-logo-img">
+                    <img src="images/svg/logotext.svg" alt="Текст логотипа" class="header__nav-box-logo-text">
+                </div>
+                <ul class="header__nav-box-list">
+                    <li><a href="#" class="header__nav-box-item">Преподаватели</a></li>
+                    <li><a href="#" class="header__nav-box-item">Бесплатное занятие</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="header__nav-box-item">Все предметы 
+                            <img src="images/svg/arrow.png" alt="" class="header__nav-box-item-img">
+                        </a>
+                        <ul class="dropdown-menu">
+                            <div class="dropdown-box"></div>
+                            <div class="dropdown-triangle"></div>
+                            <li><a href="#">Русский язык</a></li>
+                            <li><a href="#">Обществознание</a></li>
+                            <li><a href="#">Математика</a></li>
+                            <li><a href="#">Физика</a></li>
+                            <li><a href="#">Биология</a></li>
+                            <li><a href="#">История</a></li>
+                            <li><a href="#">Химия</a></li>
+                            <li><a href="#">Информатика</a></li>
+                            <li><a href="#">Литература</a></li>
+                            <li><a href="#">Английский язык</a></li>
+                            <li><a href="#">География</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="header__nav-box-item">О школе 
+                            <img src="images/svg/arrow.png" alt="" class="header__nav-box-item-img">
+                        </a>
+                        <ul class="dropdown-menu">
+                            <div class="dropdown-triangle"></div>
+                            <li><a href="#">Преподаватели</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Вакансии</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Сведения об образовательной организации</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="header__right">
+                    <div class="header__right-first">
+                        <button class="header__right-first-button"><a href="">Купить</a></button>
+                    </div>
+                    <div class="header__rigth-second">
+                        <a href="tel:" class="geader__right-second-phone"><img src="images/svg/phone.svg" alt=""></a>
+                        <button class="header__rigth-second-private"><a class="header__rigth-second-link" href="">Личный кабинет</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__nav-shapka">
+            <img src="images/purpleheader.png" alt="">
+        </div>
+    </div>
+    <div class="header__registration">
+        <img src="images/svg/Background.png" alt="" class="header__registration-background">
+        <div class="header__registration-volume">
+            <div class="header__registration-window">
+                <h1 class="header__registration-window-title">Начни ускоренную подготовку</h1>
+                <form class="header__registration-window-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="fb8a0d75-aac2-4949-8d4e-98394e65e3f4">
+                    <input type="text" name="name" required placeholder="Имя" autocomplete="off" class="header__registration-window-input">
+                    <input type="tel" name="phone" id="phone" required placeholder="(999)999-99-99" autocomplete="off" class="header__registration-window-input">
+                    <input type="email" name="email" required placeholder="E-mail" autocomplete="off" class="header__registration-window-input">
+                    <input type="submit" value="Старт" class="header__registration-window-btn" name="send">
+                </form>
+                <a href="" class="header__registration-window-agreement">Нажимая на кнопку, вы принимаете <u>политику обработки данных и согласие на обработку персональных данных</u></a>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <section class="reviews">
+        <h1 class="reviews__title"><span class="reviews__title-letter">Ч</span>то говорят ученики, сдавшие экзамены с нами<span class="reviews__title-letter">?</span></h1>
+        <div class="diamond-container">
+            <div class="large-diamond" id="large-diamond">
+              <div class="student-info" id="student-info">
+                <img src="path-to-default-photo.jpg" alt="Фото ученика" id="student-photo">
+                <h3 id="student-name">Имя ученика</h3>
+                <p id="student-description">Описание ученика</p>
+                <video id="student-video" controls>
+                  <source src="path-to-default-video.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            
+            <div class="small-diamonds">
+              <div class="small-diamond" onclick="changeStudent(1)">
+                <img src="path-to-photo1.jpg" alt="Фото ученика 1">
+              </div>
+              <div class="small-diamond" onclick="changeStudent(2)">
+                <img src="path-to-photo2.jpg" alt="Фото ученика 2">
+              </div>
+              <div class="small-diamond" onclick="changeStudent(3)">
+                <img src="path-to-photo3.jpg" alt="Фото ученика 3">
+              </div>
+              <div class="small-diamond" onclick="changeStudent(4)">
+                <img src="path-to-photo4.jpg" alt="Фото ученика 4">
+              </div>
+            </div>
+          </div>
+    </section>
+    <h2 class="main__univercities"><span class="reviews__title-letter">К</span>уда поступают наши выпускники<span class="reviews__title-letter">?</span></h2>
+</main><div class="hex-grid">
+    <div class="hex"><img src="image1.jpg" alt="Hex 1"></div>
+    <div class="hex"><img src="image2.jpg" alt="Hex 2"></div>
+    <div class="hex"><img src="image3.jpg" alt="Hex 3"></div>
+    <div class="hex"><img src="image4.jpg" alt="Hex 4"></div>
+    <div class="hex"><img src="image5.jpg" alt="Hex 5"></div>
+    <div class="hex"><img src="image6.jpg" alt="Hex 6"></div>
+    <div class="hex"><img src="image7.jpg" alt="Hex 7"></div>
+    <div class="hex"><img src="image8.jpg" alt="Hex 8"></div>
+    <div class="hex"><img src="image9.jpg" alt="Hex 9"></div>
+  </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+<script src="script/app.js"></script>
+</body>
+</html>
