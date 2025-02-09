@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: 'InterSemiBold', sans-serif;
+    font-family: 'InterSemiBold';
     font-weight: 400;
 }
 
@@ -246,9 +246,15 @@ color: white;
     display: flex;
     flex-direction: column;
   }
-  
+  .reviews__title{
+    font-size: 37.5px;
+    line-height: 45px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
 .reviews__title-letter{
     color: rgb(188, 27, 65);
+    
 }
 .main{
     display: flex;
@@ -256,6 +262,12 @@ color: white;
     justify-content: center;
     align-items: center;
     background: white;
+}
+.main__univercities{
+    font-size: 37.5px;
+line-height: 45px;
+letter-spacing: 0%;
+text-align: center;
 }
 .review{
     display: flex;
@@ -420,7 +432,7 @@ width: 140px;
 .hex::after {
     content: attr(data-title);
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: white;
@@ -441,7 +453,7 @@ width: 140px;
 
 /* Добавляем изображения */
 .hex:nth-child(1) { background-image: url('../images/itmo.png'); grid-column: 2; grid-row: 1; width: 139px; height: 158.25px; margin-left: -20px;} 
-.hex:nth-child(2) { background-image: url('../images/institut.png'); grid-column: 3; grid-row: 1;width:137px; height: 111px; } 
+.hex:nth-child(2) { background-image: url('../images/institut.png'); grid-column: 3; grid-row: 1;width:137px; height: 120px; margin-top: -5px; margin-left: 5px;} 
 .hex:nth-child(3) { background-image: url('../images/ranhigs.png'); grid-column: 4; grid-row: 1; width: 141px; height: 160px; margin-left: 20px;} 
 .hex:nth-child(4) { background-image: url('../images/nngu.png'); grid-column: 5; grid-row: 1; width: 130px; height: 157px; margin-left: 40px;} 
 .hex:nth-child(5) { background-image: url('../images/kfu.png'); grid-column: 6; grid-row: 1; width: 218px; height: 249px; margin-left: 20px;} 
@@ -456,3 +468,317 @@ width: 140px;
 .hex:nth-child(14) { background-image: url('../images/mfti.png');grid-column: 5; grid-row: 3; width: 200px; height: 228px; margin-top: 35px;margin-left: 15px;} 
 .hex:nth-child(15) { background-image: url('../images/ufu.png'); grid-column: 6; grid-row:3 ; width: 142px; height: 165px; margin-top: 30px; margin-left: 70px;} 
 .hex:nth-child(16) { background-image: url('../images/spbgu.png'); grid-column: 7; grid-row:3 ; width: 144px; height: 164px; margin-top: 25px; margin-left: 90px;} 
+
+.uni{
+    margin-top: 40px;
+}
+.exercises{
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.exercises__background{
+position: absolute;
+}
+.exercises__background:nth-child(1){top: 0;}
+.exercises__background:nth-child(2){top: 600px;}
+.exercises__background:nth-child(3){top: 1200px;}
+.exercises__title{
+    font-size: 37.5px;
+    line-height: 45px;
+    letter-spacing: 0%;
+    text-align: center;
+    z-index: 12;
+}
+.exercises__top{
+    display: flex;
+    margin-top: 106px;
+    justify-content: center;
+}
+
+.exercises__top-left-box{
+width: 546px;
+display: flex;
+flex-direction: column;
+gap: 24px;
+right: 100px;
+background: url(../images/svg/paralelagram.png) no-repeat;
+align-items: end;
+margin-top: 25px;
+height: 330px;
+}
+.exercises__top-left-title{
+    color: rgb(32, 35, 53);
+font-size: 30.13px;
+line-height: 36px;
+letter-spacing: 0%;
+text-align: right;
+font-family: 'InterLight';
+max-width: 292px;
+margin-right: 35px;
+margin-top: 21px;
+}
+.exercises__top-left-title-span{
+    font-family: 'InterExtraBold';
+}
+.exercises__top-left-info{
+    color: rgb(32, 35, 53);
+    font-family: 'InterLight';
+font-size: 16.73px;
+line-height: 27px;
+letter-spacing: 0%;
+text-align: right;
+max-width: 470px;
+margin-right: 50px;
+display: flex;
+flex-direction: column;
+gap: 10px;
+list-style: initial;
+list-style-position: inside;
+}
+.exercises__top-left-btn{
+    color: rgb(255, 255, 255);
+    font-size: 16.73px;
+    line-height: 27.9px;
+    letter-spacing: 0%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 16px 27px;
+background: rgb(124, 72, 148);
+margin-left: 300px;
+}
+.exercises__top-right{
+display: flex;
+flex-direction: column;
+position: relative;
+align-items: end;
+top: -370px;
+}
+.exercises__top-right-box{
+    width: 623px;
+height: 406px;
+z-index: 10;
+}
+.teacher-container {
+    top: 68px;
+    position: absolute;
+    position: relative;
+    display: inline-block;
+    left: 80px;
+  }
+  
+  .teacher-container img {
+    max-width: 571px; /* Размер фото */
+    transition: transform 0.3s ease;
+  }
+  
+  .teacher-info {
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+    background: rgba(252, 252, 252, 0.95);
+    padding: 12px 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .teacher-container:hover .teacher-info {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-5px);
+  }
+  
+  .teacher-info strong {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .subject-badge {
+    display: inline-block;
+    background: #1E3A8A;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .exercises__middle{
+    display: flex;
+    justify-content: center;
+    margin-right: 170px;
+    margin-top: -100px;
+}
+.teacher-vera{
+    width: 271px;
+    margin-right: 320px;
+}
+.exercises__middle-right-box{
+    width: 623px;
+height: 456px;
+z-index: 10;
+}
+.exercises__middle-left-box{
+    width: 546px;
+display: flex;
+flex-direction: column;
+gap: 24px;
+right: 100px;
+background: url(../images/svg/paralelagram.png) no-repeat;
+align-items: start;
+margin-top: -50px;
+height: 330px;
+}
+  .teacher-inform {
+    position: absolute;
+    bottom: 40px;
+    right: 170px;
+    background: rgba(252, 252, 252, 0.95);
+    padding: 12px 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .teacher-inform strong {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+  }
+    .teacher-container:hover .teacher-inform {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-5px);
+  }
+  .exercises__main-left-title{
+    color: rgb(32, 35, 53);
+font-size: 30.13px;
+line-height: 36px;
+letter-spacing: 0%;
+text-align: left;
+font-family: 'InterLight';
+max-width: 415px;
+margin-top: 21px;
+margin-left: 50px;
+}
+.exercises__main-left-info{
+    color: rgb(32, 35, 53);
+    font-family: 'InterLight';
+font-size: 16.73px;
+line-height: 27px;
+letter-spacing: 0%;
+text-align: left;
+max-width: 470px;
+margin-left: 30px;
+}
+.subject-badge-vera {
+    display: inline-block;
+    background: #fffb11;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .exercises__end{
+    display: flex;
+    justify-content: center;
+    margin-top: -150px;
+}
+.exercises__end-left-box{
+    width: 595px;
+display: flex;
+flex-direction: column;
+gap: 24px;
+right: 100px;
+background: url(../images/teachers/paraleft.png) no-repeat;
+align-items: end;
+height: 380px;
+margin-top: -100px;
+}
+.exercises__end-left-title{
+    color: rgb(32, 35, 53);
+font-size: 30.13px;
+line-height: 36px;
+letter-spacing: 0%;
+text-align: end;
+font-family: 'InterLight';
+max-width: 415px;
+margin-top: 21px;
+margin-right: 65px;
+}
+.exercises__end-right-box{
+    width: 641px;
+    height: 455px;
+z-index: 10;
+}
+.teacher-nastya{
+    width: 174px;
+height: 202.44px;
+margin-right: 400px;
+}
+.teacher-informing {
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+    background: rgba(252, 252, 252, 0.95);
+    padding: 12px 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .teacher-container:hover .teacher-informing {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-5px);
+    right: 250px;
+  }
+  .subject-badge-nastya {
+    display: inline-block;
+    background: #11e3ff;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .exercises__end-left-btn{
+    color: rgb(255, 255, 255);
+    font-size: 16.73px;
+    line-height: 27.9px;
+    letter-spacing: 0%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 16px 27px;
+background: rgb(124, 72, 148);
+margin-left: 300px;
+
+}
